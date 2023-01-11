@@ -23,6 +23,7 @@ class Bank {
 };
 
 void Bank::menu() {
+	
 	int choice;
 	cout << "1. Create Account \n";
 	cout << "2. Login \n";
@@ -72,6 +73,7 @@ void Bank::	create(){
 	//changing the doubles to string
 	
 	stringstream ss_account_number; 
+	
 	stringstream ss_i_deposit;
 	
 	ss_account_number << account_number;
@@ -101,6 +103,7 @@ if(SearchAccount(ss_account_number.str()) != 0){
 	
 }
 else{
+	
 	system("cls");
 	cout << "\t\t\t Account already exists \n\n\n";
 	menu();
